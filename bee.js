@@ -8,7 +8,7 @@ for (let i = 0; i < numBees; i++) {
     let startY = Math.random() * window.innerHeight;
     bee.style.top = `${startY}px`;
     bee.style.left = `-${Math.random() * 100}px`;
-    bees.push({ element: bee, speed: Math.random() * 3 + 2 });
+    bees.push({ element: bee, speed: Math.random() * 3});
 }
 
 function moveBees() {

@@ -11,6 +11,7 @@
 
 body {
     margin: 0;         
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +19,9 @@ body {
     background-color: rgb(197, 43, 94);
     background-image: linear-gradient(
         19deg, 
-        rgb(197, 43, 94) 0%,
-        rgb(254, 232, 186) 100%);  
+        rgb(204, 153, 74) 0%,
+        rgb(197, 43, 94) 100%
+        );  
 }
 
 main {
@@ -67,6 +69,7 @@ strong {
     width: fit-content;
     padding: 10px;
     position: relative;
+    
 }
 
 /* Adjusts every even row to be offset properly */
@@ -89,9 +92,11 @@ strong {
     font-size: 2rem;
     color: rgb(197, 43, 94);
     background-color: rgb(254, 232, 186);
-    box-shadow: 4px 4px 10px rgba(110, 106, 123, 0.25);
+    /* Removed the box-shadow property that was causing the border effect */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: transform 0.2s ease-in-out;
+    border: none; /* Ensure no border */
+    outline: none; /* Remove outline */
 }
 
 .btn:hover {
@@ -201,6 +206,7 @@ strong {
     background-image: url('Images/bee-left.png');
     background-size: cover;
     animation: fly 4s infinite linear;
+    border-radius: 50%;
 }
 
 
